@@ -23,7 +23,6 @@ public class CreateRNDTable {
                 pstmt.setString(2,generateNames());
                 System.out.println(pstmt.executeUpdate());
             }
-
         }catch (SQLException e){
             e.printStackTrace();
         }
