@@ -10,11 +10,11 @@ public class FirstExample {
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(QUERY);) {
             //Extract the data from ResultSet
-            while (rs.next()){
-                System.out.println("ID: "+ rs.getInt("id"));
-                System.out.println("First Name: "+ rs.getString("first"));
-                System.out.println("Last Name: "+ rs.getString("last"));
-                System.out.println("Age: "+ rs.getInt("age"));
+            while (rs.next()) {
+                System.out.println("ID: " + rs.getInt("id"));
+                System.out.println("First Name: " + rs.getString("first"));
+                System.out.println("Last Name: " + rs.getString("last"));
+                System.out.println("Age: " + rs.getInt("age"));
                 System.out.println("=".repeat(20));
             }
         } catch (SQLException e) {
